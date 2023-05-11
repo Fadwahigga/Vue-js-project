@@ -8,6 +8,7 @@
   <h1 v-else-if="num < 0">The Number is nagative</h1>
   <h1 v-else>The Number is not zero</h1>
   <h1 v-show="show">Show element</h1>
+  <h1 v-for="name in names" :key="name">{{ name }}</h1>
 </template>
 
 
@@ -15,8 +16,9 @@
 export default {
   data() { return { 
     // name: "fadwa" 
-    num :-7,
-    show:false
+    // num :-7,
+    // show:false
+    names:["fadwa","ali","foff"]
   } }
 }
 </script>
