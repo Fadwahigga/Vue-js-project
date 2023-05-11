@@ -7,6 +7,7 @@
   <h1 v-else-if="num > 0">The Number is positive</h1>
   <h1 v-else-if="num < 0">The Number is nagative</h1>
   <h1 v-else>The Number is not zero</h1>
+  <h1 v-show="show">Show element</h1>
 </template>
 
 
@@ -14,7 +15,8 @@
 export default {
   data() { return { 
     // name: "fadwa" 
-    num :-7
+    num :-7,
+    show:false
   } }
 }
 </script>
