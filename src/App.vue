@@ -16,6 +16,8 @@
   </div> -->
   <!-- <h1 v-for="(value , key ,index) in infVal" :key="value"> {{ index }} {{ key }}{{ value }}</h1> -->
   <h1>{{ add ()}}</h1>
+  <h1>{{ multi() }}</h1>
+  <h1>{{ passdata(multvar) }}</h1>
 </template>
 
 
@@ -29,12 +31,19 @@ export default {
       // names:["fadwa","ali","foff"],
       // fullNames: [{ frst: "fadwa", last: "ali" }, { frst: "ali", last: "fadl" }, { frst: "fadl", last: "higga" }],
       // actors: [{ name: "fadwa", movies: ["first", "secend"] }, { name: "Ali", movies: ["ali first", "ali secend"] }]
-      infVal: { name: "fadwa", chanel: "fadwaaa", course: "vuejs" }
+      // infVal: { name: "fadwa", chanel: "fadwaaa", course: "vuejs" }
+      multvar:3
     }
   },
   methods:{
     add(){
       return 5+5
+    },
+    multi(){
+      return this.multvar*2
+    }
+    ,passdata(a){
+      return a;
     }
   }
 }
