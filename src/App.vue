@@ -14,7 +14,8 @@
     <h1>{{ actor.name }}</h1>
     <h1 v-for="movie in actor.movies" :key="movie">{{ movie }}</h1>
   </div> -->
-  <h1 v-for="(value , key ,index) in infVal" :key="value"> {{ index }} {{ key }}{{ value }}</h1>
+  <!-- <h1 v-for="(value , key ,index) in infVal" :key="value"> {{ index }} {{ key }}{{ value }}</h1> -->
+  <h1>{{ add ()}}</h1>
 </template>
 
 
@@ -29,6 +30,11 @@ export default {
       // fullNames: [{ frst: "fadwa", last: "ali" }, { frst: "ali", last: "fadl" }, { frst: "fadl", last: "higga" }],
       // actors: [{ name: "fadwa", movies: ["first", "secend"] }, { name: "Ali", movies: ["ali first", "ali secend"] }]
       infVal: { name: "fadwa", chanel: "fadwaaa", course: "vuejs" }
+    }
+  },
+  methods:{
+    add(){
+      return 5+5
     }
   }
 }
