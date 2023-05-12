@@ -26,24 +26,29 @@
     <br/>
     <button v-on:click="increement(3)" class="bg-red-600">increement by method</button> -->
   <!-- </div> -->
-  
+  <div>
+    <pre>{{ JSON.stringify(formData, null, 2) }}</pre>
+  </div>
   <form>
     <div><label for="name">Name</label> <br /><input type="text" id="name" v-model="formData.name" class="border-3"></div>
     <div><label for="email">Email</label><br /><input type="email" id="email" v-model="formData.email" class="border-3">
     </div>
     single select dropdown
-    <div><label for="country">country</label> <select id="country">
+    <div><label for="country">country</label> <select id="country" v-model="formData.country">
         <option value="">Select country</option>
         <option value="Sudan">sudan</option>
         <option value="USA">USA</option>
         <option value="KSA">KSA</option>
       </select></div>
     multiple select dropdown
-    <div><label for="country">jobLocation</label> <select id="jobLocation" multiple>
+    <div><label for="country">jobLocation</label> <select id="jobLocation" multiple v-model="formData.jobLocation">
         <option value="Sudan">sudan</option>
         <option value="USA">USA</option>
         <option value="KSA">KSA</option>
       </select></div>
+    single checkbox
+    <div> <input type="checkbox" id="checkbox" v-model="formData.checkbox"> <label for="checkbox">single checkbox</label>
+    </div>
   </form>
 </template>
 
@@ -65,6 +70,7 @@ export default {
         email: "",
         country: "",
         jobLocation: [],
+        checkbox: false,
       }
     }
   },
