@@ -26,7 +26,7 @@
     <br/>
     <button v-on:click="increement(3)" class="bg-red-600">increement by method</button> -->
   <!-- </div> -->
-  <div>
+  <!-- <div>
     <pre>{{ JSON.stringify(formData, null, 2) }}</pre>
   </div>
   <form @submit="submit">
@@ -59,12 +59,16 @@
     <div><label for="0-2">0-2</label> <input type="radio" value="0-2" id="0-2" v-model="formData.yearofexp"><label
         for="3-6">3-6</label> <input type="radio" value="3-6" id="3-6" v-model="formData.yearofexp"></div>
     <div><button>submit</button></div>
-  </form>
+  </form> -->
+  Component
+  <Hello name="fadwa" />
 </template>
 
 
 <script >
+import Hello from "./components/Hello.vue"
 export default {
+  components: { Hello },
   data() {
     return {
       // name: "fadwa",
@@ -75,15 +79,15 @@ export default {
       // actors: [{ name: "fadwa", movies: ["first", "secend"] }, { name: "Ali", movies: ["ali first", "ali secend"] }]
       // infVal: { name: "fadwa", chanel: "fadwaaa", course: "vuejs" }
       // multvar: 3
-      formData: {
-        name: "",
-        email: "",
-        country: "",
-        jobLocation: [],
-        checkbox: false,
-        skils: [],
-        yearofexp: "",
-      }
+      // formData: {
+      //   name: "",
+      //   email: "",
+      //   country: "",
+      //   jobLocation: [],
+      //   checkbox: false,
+      //   skils: [],
+      //   yearofexp: "",
+      // }
     }
   },
   methods: {
@@ -102,11 +106,11 @@ export default {
     // increement(x){
     //   this.num += x
     // }
-    submit(event) {
-      event.preventDefault()
-      console.log('form values', this.formData)
+    // submit(event) {
+    //   event.preventDefault()
+    //   console.log('form values', this.formData)
 
-    }
+    // }
   }
 }
 </script>
