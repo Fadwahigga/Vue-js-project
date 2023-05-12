@@ -55,6 +55,9 @@
       <input type="checkbox" id="js" value="js" v-model="formData.skils"> <label for="js">js</label>
       <input type="checkbox" id="flutter" value="flutter" v-model="formData.skils"> <label for="flutter">flutter</label>
     </div>
+    radio
+    <div><label for="0-2">0-2</label> <input type="radio" value="0-2" id="0-2" v-model="formData.yearofexp"><label
+        for="3-6">3-6</label> <input type="radio" value="3-6" id="3-6" v-model="formData.yearofexp"></div>
   </form>
 </template>
 
@@ -78,6 +81,7 @@ export default {
         jobLocation: [],
         checkbox: false,
         skils: [],
+        yearofexp: "",
       }
     }
   },
