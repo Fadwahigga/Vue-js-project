@@ -19,7 +19,7 @@
     <h1>{{ name }}</h1>
     <button v-on:click="name = 'Ali'">Change name</button>
     <h1>{{ num }}</h1>
-    <button v-on:click="num = num + 1">Increes</button>
+    <button @click="num = num + 1">Increes</button>
     <br/>
     <button v-on:click="decrement" class="bg-red-600">decreement</button>
     <br/>
