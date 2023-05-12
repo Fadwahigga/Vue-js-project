@@ -22,6 +22,8 @@
     <button v-on:click="num = num + 1">Increes</button>
     <br/>
     <button v-on:click="decrement" class="bg-red-600">decreement</button>
+    <br/>
+    <button v-on:click="increement(3)" class="bg-red-600">increement by method</button>
   </div>
 </template>
 
@@ -52,6 +54,9 @@ export default {
     // }
     decrement() {
       this.num = this.num - 1
+    },
+    increement(x){
+      this.num += x
     }
   }
 }
