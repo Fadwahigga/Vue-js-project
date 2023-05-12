@@ -26,13 +26,20 @@
     <br/>
     <button v-on:click="increement(3)" class="bg-red-600">increement by method</button> -->
   <!-- </div> -->
+  
   <form>
     <div><label for="name">Name</label> <br /><input type="text" id="name" v-model="formData.name" class="border-3"></div>
     <div><label for="email">Email</label><br /><input type="email" id="email" v-model="formData.email" class="border-3">
     </div>
     single select dropdown
-    <div><label for="country"></label> <select id="country">
+    <div><label for="country">country</label> <select id="country">
         <option value="">Select country</option>
+        <option value="Sudan">sudan</option>
+        <option value="USA">USA</option>
+        <option value="KSA">KSA</option>
+      </select></div>
+    multiple select dropdown
+    <div><label for="country">jobLocation</label> <select id="jobLocation" multiple>
         <option value="Sudan">sudan</option>
         <option value="USA">USA</option>
         <option value="KSA">KSA</option>
@@ -56,7 +63,8 @@ export default {
       formData: {
         name: "",
         email: "",
-        country: ""
+        country: "",
+        jobLocation: [],
       }
     }
   },
