@@ -1,10 +1,10 @@
 <template>
-    <h1>Hello {{ name }}</h1>
+    <h1>Hello {{ name }} {{ lastName }}</h1>
 </template>
 
 <script>
 export default {
-props:['name']
+    props: ['name', 'lastName']
 }
 </script>
 

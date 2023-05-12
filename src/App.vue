@@ -61,7 +61,7 @@
     <div><button>submit</button></div>
   </form> -->
   Component
-  <Hello name="fadwa" />
+  <Hello name="fadwa" :lastName="lastName" />
 </template>
 
 
@@ -88,6 +88,7 @@ export default {
       //   skils: [],
       //   yearofexp: "",
       // }
+      lastName: 'Ali'
     }
   },
   methods: {
