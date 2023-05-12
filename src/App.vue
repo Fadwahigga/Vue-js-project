@@ -26,6 +26,10 @@
     <br/>
     <button v-on:click="increement(3)" class="bg-red-600">increement by method</button> -->
   <!-- </div> -->
+  <form>
+    <div><label for="name">Name</label> <br/><input type="text" id="name" v-model="formData.name" class="border-3"></div>
+    <div><label for="email">Email</label><br/><input type="email" id="email" v-model="formData.email" class="border-3"></div>
+  </form>
 </template>
 
 
@@ -40,7 +44,11 @@ export default {
       // fullNames: [{ frst: "fadwa", last: "ali" }, { frst: "ali", last: "fadl" }, { frst: "fadl", last: "higga" }],
       // actors: [{ name: "fadwa", movies: ["first", "secend"] }, { name: "Ali", movies: ["ali first", "ali secend"] }]
       // infVal: { name: "fadwa", chanel: "fadwaaa", course: "vuejs" }
-      multvar: 3
+      // multvar: 3
+      formData: {
+        name: "",
+        email: ""
+      }
     }
   },
   methods: {
