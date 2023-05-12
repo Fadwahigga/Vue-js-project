@@ -49,6 +49,12 @@
     single checkbox
     <div> <input type="checkbox" id="checkbox" v-model="formData.checkbox"> <label for="checkbox">single checkbox</label>
     </div>
+    multi checkbox
+    <div> <input type="checkbox" id="html" value="html" v-model="formData.skils"> <label for="html">html</label>
+      <input type="checkbox" id="css" value="css" v-model="formData.skils"> <label for="css">css</label>
+      <input type="checkbox" id="js" value="js" v-model="formData.skils"> <label for="js">js</label>
+      <input type="checkbox" id="flutter" value="flutter" v-model="formData.skils"> <label for="flutter">flutter</label>
+    </div>
   </form>
 </template>
 
@@ -71,6 +77,7 @@ export default {
         country: "",
         jobLocation: [],
         checkbox: false,
+        skils: [],
       }
     }
   },
