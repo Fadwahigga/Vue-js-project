@@ -29,7 +29,7 @@
   <div>
     <pre>{{ JSON.stringify(formData, null, 2) }}</pre>
   </div>
-  <form>
+  <form @submit="submit">
     <div><label for="name">Name</label> <br /><input type="text" id="name" v-model="formData.name" class="border-3"></div>
     <div><label for="email">Email</label><br /><input type="email" id="email" v-model="formData.email" class="border-3">
     </div>
@@ -58,6 +58,7 @@
     radio
     <div><label for="0-2">0-2</label> <input type="radio" value="0-2" id="0-2" v-model="formData.yearofexp"><label
         for="3-6">3-6</label> <input type="radio" value="3-6" id="3-6" v-model="formData.yearofexp"></div>
+    <div><button>submit</button></div>
   </form>
 </template>
 
@@ -101,6 +102,11 @@ export default {
     // increement(x){
     //   this.num += x
     // }
+    submit(event) {
+      event.preventDefault()
+      console.log('form values', this.formData)
+
+    }
   }
 }
 </script>
