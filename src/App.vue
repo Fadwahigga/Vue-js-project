@@ -77,13 +77,14 @@
       <h1>footer</h1>
     </template>
   </Layout> -->
-  Dynamic component
+ <div class="align-middle text-center"> Dynamic component
+
   <button>TabA</button>
   <button>TabB</button>
   <button>TabC</button>
   <TabA />
   <TabB />
-  <TabC />
+  <TabC /></div>
 </template>
 
 
