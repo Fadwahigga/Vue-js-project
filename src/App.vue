@@ -65,15 +65,27 @@
   Slot
   <!-- <Card content="content 1" />
   <Card content="content 2" /> -->
-  <Card>Hi slot</Card>
+  <!-- <Card>Hi slot</Card> -->
+  <Layout>
+    <template v-slot:header>
+      <h1>Header</h1>
+    </template>
+    <template v-slot:content>
+      <h1>content</h1>
+    </template>
+    <template v-slot:footer>
+      <h1>footer</h1>
+    </template>
+  </Layout>
 </template>
 
 
 <script >
 import Hello from "./components/Hello.vue"
 import Card from "./components/Card.vue"
+import Layout from "./components/Layout.vue"
 export default {
-  components: { Hello, Card },
+  components: { Hello, Card, Layout },
   data() {
     return {
       // name: "fadwa",
