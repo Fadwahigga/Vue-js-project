@@ -4,7 +4,10 @@
 
 <script>
 export default {
-    props: ['name', 'lastName']
+    // props: ['name', 'lastName']
+    props:{
+        name:String
+    }
 }
 </script>
 
