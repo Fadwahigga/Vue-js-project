@@ -63,8 +63,9 @@
   <!-- Component
   <Hello name="fadwa" :lastName="lastName" age=24 uniName="uofk" /> -->
   Slot
-  <Card content="content 1" />
-  <Card content="content 2" />
+  <!-- <Card content="content 1" />
+  <Card content="content 2" /> -->
+  <Card>Hi slot</Card>
 </template>
 
 
