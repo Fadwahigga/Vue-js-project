@@ -1,12 +1,13 @@
 <template>
-    <h1>Hello {{ name }} {{ lastName }}</h1>
+    <h1>Hello  my name is {{ name }} {{ lastName }} iam {{ age }}</h1>
 </template>
 
 <script>
 export default {
     // props: ['name', 'lastName']
     props:{
-        name:String
+        name:String,
+        age:Number
     }
 }
 </script>
