@@ -62,11 +62,11 @@
   </form> -->
   <!-- Component
   <Hello name="fadwa" :lastName="lastName" age=24 uniName="uofk" /> -->
-  Slot
+  <!-- Slot -->
   <!-- <Card content="content 1" />
   <Card content="content 2" /> -->
   <!-- <Card>Hi slot</Card> -->
-  <Layout>
+  <!-- <Layout>
     <template v-slot:header>
       <h1>Header</h1>
     </template>
@@ -76,7 +76,14 @@
     <template v-slot:footer>
       <h1>footer</h1>
     </template>
-  </Layout>
+  </Layout> -->
+  Dynamic component
+  <button>TabA</button>
+  <button>TabB</button>
+  <button>TabC</button>
+  <TabA />
+  <TabB />
+  <TabC />
 </template>
 
 
@@ -84,8 +91,11 @@
 import Hello from "./components/Hello.vue"
 import Card from "./components/Card.vue"
 import Layout from "./components/Layout.vue"
+import TabA from "./components/TabA.vue"
+import TabB from "./components/TabB.vue"
+import TabC from "./components/TabC.vue"
 export default {
-  components: { Hello, Card, Layout },
+  components: { Hello, Card, Layout, TabA, TabB, TabC },
   data() {
     return {
       // name: "fadwa",
@@ -105,7 +115,7 @@ export default {
       //   skils: [],
       //   yearofexp: "",
       // }
-      lastName: 'Ali'
+      // lastName: 'Ali'
     }
   },
   methods: {
