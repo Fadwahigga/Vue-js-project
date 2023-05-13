@@ -60,15 +60,19 @@
         for="3-6">3-6</label> <input type="radio" value="3-6" id="3-6" v-model="formData.yearofexp"></div>
     <div><button>submit</button></div>
   </form> -->
-  Component
-  <Hello name="fadwa" :lastName="lastName" age=24 uniName="uofk" />
+  <!-- Component
+  <Hello name="fadwa" :lastName="lastName" age=24 uniName="uofk" /> -->
+  Slot
+  <Card content="content 1" />
+  <Card content="content 2" />
 </template>
 
 
 <script >
 import Hello from "./components/Hello.vue"
+import Card from "./components/Card.vue"
 export default {
-  components: { Hello },
+  components: { Hello, Card },
   data() {
     return {
       // name: "fadwa",
