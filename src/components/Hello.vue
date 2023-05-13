@@ -1,5 +1,5 @@
 <template>
-    <h1>Hello  my name is {{ name }} {{ lastName }} iam {{ age }}</h1>
+    <h1>Hello  my name is {{ name }} {{ lastName }} iam {{ age }} {{ uniName }}</h1>
 </template>
 
 <script>
@@ -7,7 +7,11 @@ export default {
     // props: ['name', 'lastName']
     props:{
         name:String,
-        age:Number
+        age:Number,
+        uniName:{
+            type:String,
+            required:true,
+        }
     }
 }
 </script>

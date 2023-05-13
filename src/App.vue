@@ -61,7 +61,7 @@
     <div><button>submit</button></div>
   </form> -->
   Component
-  <Hello name="fadwa" :lastName="lastName" age=24 />
+  <Hello name="fadwa" :lastName="lastName" age=24 uniName="uofk" />
 </template>
 
 
