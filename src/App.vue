@@ -77,14 +77,16 @@
       <h1>footer</h1>
     </template>
   </Layout> -->
- <div class="align-middle text-center"> Dynamic component
+  <div class="align-middle text-center"> Dynamic component
 
-  <button>TabA</button>
-  <button>TabB</button>
-  <button>TabC</button>
-  <TabA />
-  <TabB />
-  <TabC /></div>
+    <button @click="activeComponent = 'TabA'">TabA</button>
+    <button @click="activeComponent = 'TabB'">TabB</button>
+    <button @click="activeComponent = 'TabC'">TabC</button>
+    <component :is="activeComponent" />
+    <!-- <TabA />
+    <TabB />
+    <TabC /> -->
+  </div>
 </template>
 
 
@@ -117,6 +119,7 @@ export default {
       //   yearofexp: "",
       // }
       // lastName: 'Ali'
+      activeComponent: 'TabA'
     }
   },
   methods: {
