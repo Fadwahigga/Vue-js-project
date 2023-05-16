@@ -79,14 +79,17 @@
   </Layout> -->
   <div class="align-middle text-center"> Dynamic component
 
-    <button @click="activeComponent = 'TabA'">TabA</button>
+    <!-- <button @click="activeComponent = 'TabA'">TabA</button>
     <button @click="activeComponent = 'TabB'">TabB</button>
     <button @click="activeComponent = 'TabC'">TabC</button>
-    <component :is="activeComponent" />
+    <component :is="activeComponent" /> -->
     <!-- <TabA />
     <TabB />
     <TabC /> -->
   </div>
+  <Upload/>
+
+  
 </template>
 
 
@@ -97,8 +100,9 @@ import Layout from "./components/Layout.vue"
 import TabA from "./components/TabA.vue"
 import TabB from "./components/TabB.vue"
 import TabC from "./components/TabC.vue"
+import Upload from "./components/Upload.vue"
 export default {
-  components: { Hello, Card, Layout, TabA, TabB, TabC },
+  components: { Hello, Card, Layout, TabA, TabB, TabC,Upload },
   data() {
     return {
       // name: "fadwa",
